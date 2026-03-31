@@ -1,26 +1,35 @@
 
 
 .kontener {
- max-width: 1100px;
- width: 92%;
- margin: 0 auto;
- margin-top: 40px;
+    max-width: 1200px;
+    width: 92%;
+    margin: 20px auto 0 auto;
+    padding: 10px;
+    background-color: red;       
+    border: 2px black solid;
+    border-radius: 80px;           
 }
-nav ul {
-    list-style: none;      /* Pontok eltüntetése */
-    display: flex;         /* Sorba rendezi az elemeket */
-    justify-content: center; /* Középre igazítás */
-    padding: 0;
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; 
+    padding: 20px;
     margin: 0;
 }
 
-nav ul li {
-    margin: 0 15px; /* Tér a gombok között */
-}
 
-nav ul li a {
+.lista {
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
     text-decoration: none;
     font-size: 18px;
+    border-radius: 50px;
+    border: 2px solid white;
+    transition: 0.3s;
 }
 
 /*.nav{
@@ -40,4 +49,10 @@ nav a {
     background-color: rgb(34, 35, 35);
     color: white;
     
+
+.lista:hover {
+    background-color: white;
+    color: black;
+    border-color: black;
 }
+
