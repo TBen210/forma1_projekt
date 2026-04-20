@@ -18,11 +18,7 @@ body {
     border: 8px solid #FF1801; 
     border-radius: 25px; 
     min-height: 96vh; 
-    
-
     padding: 3%; 
-    
-
     box-shadow: 0 10px 20px rgba(0,0,0,0.5); 
 }
 
@@ -30,11 +26,12 @@ body {
 
 .kontener {
     max-width: 1200px;
-    width: 92%;
-    margin: 20px auto 0 auto;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
     padding: 10px;
-    background-color: red;       
-    border: 2px black solid;
+    background-color: black;       
+    border: 2px #F0EEE9 solid;
     border-radius: 80px;           
 }
 
@@ -67,12 +64,3 @@ body {
     border-color: black;
 }
 
-<<<<<<< HEAD
-.F1car {
-    margin: auto;
-    max-width: 40%;
-    max-height: 30%;
-    padding: 30px;
-}
-=======
->>>>>>> 3340c321ca244d2700c8f9feb3d061fb1b27a426
