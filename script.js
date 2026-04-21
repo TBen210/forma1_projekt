@@ -50,13 +50,14 @@ function kvizErtekeltext(){
     var valasztext1 = document.getElementById("kerdestext1").value;
 
 
+// Kis és Nagybetű elleni "védekezés"
+        if("Valasztext1.toLowerCase() === "Helyes válasz helye || Valasztext1.toLowerCase() === "Ha több helye válasz akkor azt ide" ){
+            pontszamtext++;
+
+        } 
+
+    // Eredmény kiiratása
     
-        if(){
-
-
-        } else 
-
-        
+    document.getElementById("eredmenytext")innerHTML = "Pontszámod:" + pontszam "/4";
 
     
-}
