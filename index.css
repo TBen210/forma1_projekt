@@ -114,9 +114,7 @@ main {
     height: 50%;
 }
 
-/* ============================ */
 /* A kvíz formázása       */
-/* ============================ */
 
 /*h2 {
     text-align: center; /* Javítva az elírás és hiányzó pontosvessző */
@@ -157,61 +155,87 @@ main {
     background-color: #b30000;
 }
 
-/* ============================ */
-/* A Footer Formázása      */
-/* ============================ */
-
-.f1-footer {
-    background-color: #003a35; /* Sötétebb Aston Martin zöld */
-    color: white;
-    padding: 40px 0 20px 0;
-    font-family: Arial, sans-serif;
-    margin-top: 50px;
+   /* Footer Formázása */
+   
+   .f1-footer {
+    background-color: #15151e;
+    color: #f0f0f0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 50px 0 20px 0;
+    margin-top: 60px;
+    border-top: 5px solid #e10600;
 }
 
 .footer-tartalom {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap; /* Mobilbarát, ha nem fér el, tördeli */
-    width: 90%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 85%;
+    max-width: 1200px;
     margin: 0 auto;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 }
 
 .footer-resz {
     flex: 1;
     min-width: 250px;
-    margin: 10px;
+    margin: 15px;
 }
 
-.footer-resz h3, .footer-resz h4 {
-    color: #00ff41; /* Verseny-zöld kiemelés */
-    margin-bottom: 15px;
+
+
+.footer-resz h2 {
+    text-align: center;
+    color: #e10600;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-resz h3 {
+    color: #e10600;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-resz p {
+    line-height: 1.6;
+    color: #a0a0a0;
+    font-size: 0.95rem;
 }
 
 .footer-menu {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 .footer-menu li {
-    margin-bottom: 8px;
+    margin-bottom: 12px;
 }
 
 .footer-menu a {
-    color: white; 
-    text-decoration: none; 
-    transition: opacity 0.3s;
+    color: #d1d1d1;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
 }
 
 .footer-menu a:hover {
-    opacity: 0.8; 
+    color: #e10600;
+    transform: translateX(8px);
 }
 
 .footer-alj {
     text-align: center;
-    border-top: 1px solid #004f48;
+    border-top: 1px solid #2a2a35;
     padding-top: 20px;
-    font-size: 0.8em;
-    color: #ccc;
+    margin-top: 10px;
+    font-size: 0.85em;
+    color: #e10600;
+
+    letter-spacing: 0.5px;
 }
