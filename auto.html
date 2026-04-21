@@ -3,17 +3,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="">
   <title>Document</title>
 </head>
 <body>
   
 
-  // Kvíz Függvény //
+
+<section id="kviz-szekcio">
+
+<form id="kviz-szekcio">
+
+
+  <div id="kviztext">
 
   <p> 1. kérdés helye</p>
   <input id="kerdestext1" type="text">
-  <button onclick="kvizErtekelestext">Kész vagyok!</button>
+  <br>
+
+  <p> 2. kérdés helye</p>
+  <input id="kerdestext2" type="text">
+  <br>
+
+  <p> 3. kérdés helye</p>
+  <input id="kerdestext3" type="text"> 
+  <br>
+
+  <p> 4. kérdés helye</p>
+  <input id="kerdestext4" type="text">
+  <br>
+
+  <button type="button" onclick="kvizErtekeltext()">Kész vagyok!</button>
+  <p id="szoveges_visszajelzes"></p>
   <p id="eredmeny_helyetext"></p>
+
+
+  
+</div>
+
+</form>
+
+<div id="eredmeny-doboztext" style="margin-top: 20px; font-weight: bold; font-size: 1.2em;"></div>
+</section>
 </body>
 </html>
