@@ -1,3 +1,5 @@
+
+// Radio Gomb Function //
 function kvizErtekel() {
     var pontszam = 0;
     const osszesKerdes = 4;
@@ -39,4 +41,22 @@ function kvizErtekel() {
     // Színek beállítása az eredménytől függően (az Aston Martin zöld színét is használhatjuk a hibátlanra!)
     if(pontszam === 4) eredmenyDoboz.style.color = "#00665e"; /* Aston Martin zöld */
     else eredmenyDoboz.style.color = "#e10600";
+}
+
+
+function kvizErtekeltext(){
+    var pontszamtext = 0;
+     
+    var valasztext1 = document.getElementById("kerdestext1").value;
+
+
+    
+        if(){
+
+
+        } else 
+
+        
+
+    
 }
