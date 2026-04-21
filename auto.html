@@ -129,5 +129,37 @@
 
     <div id="eredmeny-doboztext" style="margin-top: 20px; font-weight: bold; font-size: 1.2em;"></div>
   </section>
+  
+<script src="script_text.js"></script>
+  <section id="kviz-kontener">
+    
+    
+    <form id="kviz-form">
+
+    <div id="kviztext">
+      
+        <p>1. Ki a leghíresebb olasz csapat?</p>
+        <input id="kerdestext1" type="text">
+        <br>
+        <p>2. Milyen színű a Ferrari?</p>
+        <input id="kerdestext2" type="text">
+        <br>
+        <p>3. Ki nyert 2024-ben Monacóban? (Vezetéknév)</p>
+        <input id="kerdestext3" type="text"> 
+        <br>
+        <p>4. Melyik városban van az éjszakai szingapúri futam?</p>
+        <input id="kerdestext4" type="text">
+        <br>
+        <button type="button" onclick="kvizErtekeltext()">Kész vagyok!</button>
+        
+        <p id="szoveges_visszajelzes"></p>
+        <p id="eredmeny_helyetext"></p>
+    </div>
+</form>
+<div id="eredmeny-doboztext" style="margin-top: 20px; font-weight: bold;"></div>
+
+
+</section>
+
 </body>
 </html>
