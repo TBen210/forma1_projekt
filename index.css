@@ -22,7 +22,6 @@ body {
 }
 
 .kontener {
-<<<<<<< HEAD
     max-width: 1400px;
     width: 92%;
     margin: 20px auto 0 auto;
@@ -30,16 +29,6 @@ body {
     background-color: rgb(31, 176, 149);       
     border: 2px black solid;
     border-radius: 20px;           
-=======
-    max-width: 1200px;
-    width: 60%;
-    margin-left: 20%;
-    margin-right: 20%;
-    padding: 10px;
-    background-color: black;       
-    border: 2px #F0EEE9 solid;
-    border-radius: 80px;           
->>>>>>> 498e68abefea6ebbb56ad8e2589c2eb893c0c165
 }
 
 .nav ul {
@@ -78,7 +67,6 @@ body {
     border-color: black;
 }
 
-<<<<<<< HEAD
 main { 
     max-width: 1000px; 
     margin: 20px auto 40px; 
@@ -219,5 +207,3 @@ h2 {
     font-size: 0.8em;
     color: #ccc;
 }
-=======
->>>>>>> 498e68abefea6ebbb56ad8e2589c2eb893c0c165
