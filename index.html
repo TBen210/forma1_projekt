@@ -5,21 +5,119 @@
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <link rel="stylesheet" href="index.css">
+
  <title>Document</title>
 </head>
+<style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+ 
+    :root {
+      --hatter:#1E1212;
+      --felulet:rgb(28, 52, 48);
+      --feluletlen:rgb(21, 42, 38);
+      --hatar:rgba(255,255,255,0.08);
+      --IDK:rgb(31, 176, 149);
+      --szoveg-szin:#F2E8E8;
+      --jo-nez-ki:rgb(116, 158, 151);
+    }
+ 
+    body {
+      font-family: system-ui, sans-serif;
+      background: var(--hatter);
+      color: var(--szoveg-szin);
+      line-height: 1.6;
+      padding: 3rem 1.5rem;
+    }
+ 
+    .kartyak {
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+ 
+    .kartya {
+      background: var(--felulet);
+      border: 0.5px solid var(--hatar);
+      border-radius: 14px;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+ 
+    .kartya-cim {
+      font-size: 2.1rem;
+      font-weight: 600;
+      color: var(--szoveg-szin);
+    }
+ 
+    .kartya-tartalom{
+      font-size: 1.1rem;
+      color: var(--jo-nez-ki);
+    }
+ 
+    .ici-pici-kartyak {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      border-top: 0.5px solid var(--hatter);
+      padding-top: 1rem;
+    }
+ 
+    .meg-kisebb-kartyak {
+      background: var(--feluletlen);
+      border: 0.5px solid var(--hatar);
+      border-radius: 8px;
+      padding: 12px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      cursor: pointer;
+    }
+ 
+    .kartya:hover { border-color: var(--IDK); }
+    .meg-kisebb-kartyak:hover { border-color: var(--IDK); }
+ 
+    .legkisebb-kartyak-cime {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--szoveg-szin);
+    }
+ 
+    .a-lehetetlenul-legkisebb-kartya-tartalom-a-fold-kereken {
+      font-size: 0.78rem;
+      color: var(--jo-nez-ki);
+    }
+  </style>
+</head>
 <body>
-    <header>
-        <div class="kontener">
-            <nav class="nav">
-                <img src="kepek/logo2.png" alt="F1 logó" class="logo">
-                <ul>
-                    <li><a href="index.html" class="lista">Főoldal</a></li>
-                    <li><a href="tortenelem.html" class="lista">F1 Történelme</a></li>
-                    <li><a href="csapat.html" class="lista">Csapat</a></li>
-                    <li><a href="auto.html" class="lista">F1 Autók</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <header>
+    <div class="kontener">
+       <nav class="nav">
+        <img src="kepek/logo2.png" alt="F1 logó" class="logo">
+           <ul>
+                <li><a href="index.html" class="lista">Főoldal</a></li>
+               <li><a href="tortenelem.html" class="lista">F1 Történelme</a></li>
+               <li><a href="csapat.html" class="lista">Csapat</a></li>
+               <li><a href="auto.html" class="lista">F1 Autók</a></li>
+           </ul>
+       </nav>
+   </div>
+</header>
+  <div class="kartyak">
+    <div class="kartya">
+      <div>
+        <div class="kartya-cim">Késszítette:</div>
+        <p class="kartya-tartalom">
+            Varsányi Panna <br>
+            Renk Bence<br>
+            Tóth Benedek<br>
+        </p>
+      </div>
+    </div>
+ 
+  </div>
 </body>
 </html>
