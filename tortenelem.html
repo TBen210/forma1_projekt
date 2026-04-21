@@ -12,12 +12,12 @@
  
     :root {
       --hatter:#1E1212;
-      --felulet:#2E1A1A;
-      --feluletlen:#1E1212;
+      --felulet:rgb(28, 52, 48);
+      --feluletlen:rgb(21, 42, 38);
       --hatar:rgba(255,255,255,0.08);
-      --IDK:#E05555;
+      --IDK:rgb(31, 176, 149);
       --szoveg-szin:#F2E8E8;
-      --jo-nez-ki:#9E7A7A;
+      --jo-nez-ki:rgb(116, 158, 151);
     }
  
     body {
@@ -76,6 +76,7 @@
       cursor: pointer;
     }
  
+    .kartya:hover { border-color: var(--IDK); }
     .meg-kisebb-kartyak:hover { border-color: var(--IDK); }
  
     .legkisebb-kartyak-cime {
@@ -91,6 +92,19 @@
   </style>
 </head>
 <body>
+  <header>
+    <div class="kontener">
+       <nav class="nav">
+        <img src="kepek/logo2.png" alt="F1 logó" class="logo">
+           <ul>
+                <li><a href="index.html" class="lista">Főoldal</a></li>
+               <li><a href="tortenelem.html" class="lista">F1 Történelme</a></li>
+               <li><a href="csapat.html" class="lista">Csapat</a></li>
+               <li><a href="auto.html" class="lista">F1 Autók</a></li>
+           </ul>
+       </nav>
+   </div>
+</header>
  
   <div class="kartyak">
  
@@ -148,17 +162,7 @@
     <div class="kartya">
       <div>
         <div class="kartya-cim">Utolsó Kártya</div>
-        <p class="kartya-tartalom">Itt lenne az összefoglaló de ezt majd holnap.</p>
-      </div>
-      <div class="ici-pici-kartyak">
-        <div class="meg-kisebb-kartyak">
-          <div class="legkisebb-kartyak-cime ">legkisebb-kartyak-cime</div>
-          <div class="a-lehetetlenul-legkisebb-kartya-tartalom-a-fold-kereken">a-lehetetlenul-legkisebb-kartya-tartalom-a-fold-kereken</div>
-        </div>
-        <div class="meg-kisebb-kartyak">
-          <div class="legkisebb-kartyak-cime ">B kártya mert mért ne</div>
-          <div class="a-lehetetlenul-legkisebb-kartya-tartalom-a-fold-kereken">a-lehetetlenul-legkisebb-kartya-tartalom-a-fold-kereken</div>
-        </div>
+        <p class="kartya-tartalom">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi dignissimos necessitatibus vitae, officiis eius possimus cumque qui rerum, modi velit similique dicta quo, molestias numquam aliquid expedita laudantium maxime repudiandae?</p>
       </div>
     </div>
  
