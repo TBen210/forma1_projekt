@@ -73,6 +73,71 @@
             </div>
         </section>
     </main>
+
+
+
+
+
+    <section id="kviz-szekcio">
+        <h2>Aston Martin Csapattörténet Kvíz</h2>
+        <p>Teszteld, mennyire figyeltél a csapat történetére!</p>
+        
+        <form id="f1-kviz">
+            <div class="kerdes-blokk">
+                <p><strong>1. Melyik évben debütált először az Aston Martin a Forma-1-ben?</strong></p>
+                <input type="radio" id="valasz1a" name="kerdes1" value="rossz">
+                <label for="valasz1a">1991-ben</label><br>
+                
+                <input type="radio" id="valasz1b" name="kerdes1" value="helyes">
+                <label for="valasz1b">1959-ben</label><br>
+                
+                <input type="radio" id="valasz1c" name="kerdes1" value="rossz">
+                <label for="valasz1c">2021-ben</label>
+            </div>
+    
+            <div class="kerdes-blokk">
+                <p><strong>2. Melyik legendás világbajnok debütált a mai csapat ősénél, a Jordan Grand Prix-nél?</strong></p>
+                <input type="radio" id="valasz2a" name="kerdes2" value="rossz">
+                <label for="valasz2a">Fernando Alonso</label><br>
+                
+                <input type="radio" id="valasz2b" name="kerdes2" value="rossz">
+                <label for="valasz2b">Sebastian Vettel</label><br>
+                
+                <input type="radio" id="valasz2c" name="kerdes2" value="helyes">
+                <label for="valasz2c">Michael Schumacher</label>
+            </div>
+    
+            <div class="kerdes-blokk">
+                <p><strong>3. Milyen néven érte el a csapat a sikereit kis költségvetésből 2008 és 2018 között?</strong></p>
+                <input type="radio" id="valasz3a" name="kerdes3" value="rossz">
+                <label for="valasz3a">Midland F1</label><br>
+                
+                <input type="radio" id="valasz3b" name="kerdes3" value="helyes">
+                <label for="valasz3b">Sahara Force India</label><br>
+                
+                <input type="radio" id="valasz3c" name="kerdes3" value="rossz">
+                <label for="valasz3c">Spyker F1</label>
+            </div>
+    
+            <div class="kerdes-blokk">
+                <p><strong>4. Kicsoda Adrian Newey, akit nemrég leigazolt az Aston Martin?</strong></p>
+                <input type="radio" id="valasz4a" name="kerdes4" value="helyes">
+                <label for="valasz4a">A sportág történetének legsikeresebb tervezőzsenije</label><br>
+                
+                <input type="radio" id="valasz4b" name="kerdes4" value="rossz">
+                <label for="valasz4b">Egy kanadai üzletember, aki megmentette a csapatot</label><br>
+                
+                <input type="radio" id="valasz4c" name="kerdes4" value="rossz">
+                <label for="valasz4c">Az új, fiatal pilótájuk a fejlesztési programból</label>
+            </div>
+    
+            <button type="button" onclick="kvizErtekel()">Eredmény megnézése</button>
+        </form>
+    
+        <div id="eredmeny-doboz" style="margin-top: 20px; font-weight: bold; font-size: 1.2em;"></div>
+    </section>
+    
+    <script src="script.js"></script>
     
 
    

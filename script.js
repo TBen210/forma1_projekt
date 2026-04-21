@@ -1,31 +1,50 @@
-
 // Radio Gomb Function //
+
 function kvizErtekel() {
+
     var pontszam = 0;
-    const osszesKerdes = 4;
+    var osszesKerdes = 4;
+    var eredmenyDoboz = document.getElementById("eredmeny-doboz");
+    
+    var q1_kitoltve = document.getElementById("valasz1a").checked || document.getElementById("valasz1b").checked || document.getElementById("valasz1c").checked;
+    
+    var q2_kitoltve = document.getElementById("valasz2a").checked || document.getElementById("valasz2b").checked || document.getElementById("valasz2c").checked;
+    
+    var q3_kitoltve = document.getElementById("valasz3a").checked || document.getElementById("valasz3b").checked || document.getElementById("valasz3c").checked;
+    
+    var q4_kitoltve = document.getElementById("valasz4a").checked || document.getElementById("valasz4b").checked || document.getElementById("valasz4c").checked;
 
-    // A válaszok lekérése a DOM-ból a rádiógombok (name attribútum) alapján
-    const valasz1 = document.querySelector('input[name="q1"]:checked');
-    const valasz2 = document.querySelector('input[name="q2"]:checked');
-    const valasz3 = document.querySelector('input[name="q3"]:checked');
-    const valasz4 = document.querySelector('input[name="q4"]:checked');
-
-    // Ellenőrzés: mindenre érkezett-e válasz?
-    if (!valasz1 || !valasz2 || !valasz3 || !valasz4) {
-        const hibaDoboz = document.getElementById("eredmeny-doboz");
-        hibaDoboz.innerHTML = "Légy szíves, jelölj be egy választ minden kérdésnél!";
-        hibaDoboz.style.color = "orange";
+    // Minden kérdésre jött válasz? (Ellenőrzés)
+    if (!q1_kitoltve || !q2_kitoltve || !q3_kitoltve || !q4_kitoltve) {
+        eredmenyDoboz.innerHTML = "Légy szíves, jelölj be egy választ minden kérdésnél!";
+        eredmenyDoboz.style.color = "orange";
         return; 
     }
 
-    // Pontszámítás a "helyes" értékek alapján
-    if (valasz1.value === "helyes") pontszam++;
-    if (valasz2.value === "helyes") pontszam++;
-    if (valasz3.value === "helyes") pontszam++;
-    if (valasz4.value === "helyes") pontszam++;
+
+
+// 1. kérdés 
+if (document.getElementById("valasz1b").checked) {
+    pontszam++; 
+}
+
+// 2. kérdés 
+if (document.getElementById("valasz2c").checked) {
+    pontszam++; 
+}
+
+// 3. kérdés 
+if (document.getElementById("valasz3b").checked) {
+    pontszam++; 
+}
+
+// 4. kérdés 
+if (document.getElementById("valasz4a").checked) {
+    pontszam++; 
+}
 
     // Értékelő szöveg összeállítása
-    let szovegesErtekeles = "";
+    var szovegesErtekeles = "";
     if (pontszam === 4) {
         szovegesErtekeles = "Hibátlan! Úgy ismered a csapatot, mint Lawrence Stroll! 🟢🏆";
     } else if (pontszam >= 2) {
@@ -34,18 +53,22 @@ function kvizErtekel() {
         szovegesErtekeles = "Ez most olyan lett, mint az 1959-es szezon... Olvasd át újra a szöveget! 🔧";
     }
 
-    // Eredmény kiírása a DOM-ba
-    const eredmenyDoboz = document.getElementById("eredmeny-doboz");
+    // 4. LÉPÉS: Az eredmény kiírása a HTML-be
     eredmenyDoboz.innerHTML = "Elért pontszám: " + pontszam + " / " + osszesKerdes + "<br>" + szovegesErtekeles;
     
-    // Színek beállítása az eredménytől függően (az Aston Martin zöld színét is használhatjuk a hibátlanra!)
-    if(pontszam === 4) eredmenyDoboz.style.color = "#00665e"; /* Aston Martin zöld */
-    else eredmenyDoboz.style.color = "#e10600";
+    
+    if (pontszam === 4) {
+        eredmenyDoboz.style.color = "#00665e"; 
+    } else {
+        eredmenyDoboz.style.color = "#e10600"; 
+    }
 }
 
 
+
+
+
 function kvizErtekeltext(){
-    function kvizErtekeltext(){
 
          var pontszamtext = 0;
     
@@ -99,6 +122,4 @@ function kvizErtekeltext(){
          // Eredmény kiiratása
         
          document.getElementById("eredmeny_helyetext").innerHTML = "Pontszámod:" + pontszamtext + "/4";
-        }
-    }
-    
+}
