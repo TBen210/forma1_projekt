@@ -95,6 +95,9 @@ main {
     margin-bottom:50px ;
 }
  
+#1st{
+    text-align: center;
+}
 
 .logo {
     width: 80px;
@@ -238,100 +241,64 @@ main {
     text-align: center;
     border-top: 1px solid #2a2a35;
     padding-top: 20px;
-<<<<<<< HEAD
     margin-top: 10px;
     font-size: 0.85em;
     color: #e10600;
 
     letter-spacing: 0.5px;
 }
-=======
-    font-size: 0.8em;
-    color: #ccc;
-}
 
 
 
-/*benedek-féle*/
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+/*Főoldal*/
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
  
-:root {
-  --hatter:#1E1212;
-  --felulet:rgb(28, 52, 48);
-  --feluletlen:rgb(21, 42, 38);
-  --hatar:rgba(255,255,255,0.08);
-  --IDK:rgb(31, 176, 149);
-  --szoveg-szin:#F2E8E8;
-  --jo-nez-ki:rgb(116, 158, 151);
-}
-
-/*body {
-  font-family: system-ui, sans-serif;
-  background: var(--hatter);
-  color: var(--szoveg-szin);
-  line-height: 1.6;
-  padding: 3rem 1.5rem;
-}*/
-
-.kartyak {
-  max-width: 900px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 1.25rem;
-}
-
-.kartya {
-  background: var(--felulet);
-  border: 0.5px solid var(--hatar);
-  border-radius: 14px;
-  padding: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.kartya-cim {
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: var(--szoveg-szin);
-}
-
-.kartya-tartalom{
-  font-size: 0.875rem;
-  color: var(--jo-nez-ki);
-}
-
-.ici-pici-kartyak {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  border-top: 0.5px solid var(--hatter);
-  padding-top: 1rem;
-}
-
-.meg-kisebb-kartyak {
-  background: var(--feluletlen);
-  border: 0.5px solid var(--hatar);
-  border-radius: 8px;
-  padding: 12px 14px;
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  cursor: pointer;
-}
-
-.kartya:hover { border-color: var(--IDK); }
-.meg-kisebb-kartyak:hover { border-color: var(--IDK); }
-
-.legkisebb-kartyak-cime {
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--szoveg-szin);
-}
-
-.a-lehetetlenul-legkisebb-kartya-tartalom-a-fold-kereken {
-  font-size: 0.78rem;
-  color: var(--jo-nez-ki);
-}
->>>>>>> 9c95ed7475f73da271c56639f26e8fcfa43926d5
+    :root {
+      --hatter:#1E1212;
+      --felulet:rgb(28, 52, 48);
+      --feluletlen:rgb(21, 42, 38);
+      --hatar:rgba(255,255,255,0.08);
+      --IDK:rgb(31, 176, 149);
+      --szoveg-szin:#F2E8E8;
+      --jo-nez-ki:rgb(116, 158, 151);
+    }
+ 
+    body {
+      font-family: system-ui, sans-serif;
+      background: var(--hatter);
+      color: var(--szoveg-szin);
+      line-height: 1.6;
+      padding: 3rem 1.5rem;
+    }
+ 
+    .kartyak {
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+ 
+    .kartya {
+      background: var(--felulet);
+      border: 0.5px solid var(--hatar);
+      border-radius: 14px;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+ 
+    .kartya-cim {
+      font-size: 2.1rem;
+      font-weight: 600;
+      color: var(--szoveg-szin);
+    }
+ 
+    .kartya-tartalom{
+      font-size: 1.1rem;
+      color: var(--jo-nez-ki);
+    }
+ 
+    .kartya:hover { border-color: var(--IDK); }
+ 
