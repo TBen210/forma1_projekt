@@ -1,4 +1,5 @@
 // Radio Gomb Function //
+// A Kvíz a csapat.html oldalon található //
 
 function kvizErtekel() {
 
@@ -68,6 +69,7 @@ if (document.getElementById("valasz4a").checked) {
 
 
 
+// A pilota.html oldalon található kvíz függvénye //
 function kvizErtekeltext(){
 
          var pontszamtext = 0;
@@ -81,16 +83,16 @@ function kvizErtekeltext(){
         
         
         // Kis és Nagybetű elleni "védekezés"
-        if (Valasztext1.toLowerCase() === "ferrari" || Valasztext1.toLowerCase() === "vörös") {
+        if (Valasztext1.toLowerCase() === "juan manuel fangio" ) {
          pontszamtext++;
         }
-        if (Valasztext2.toLowerCase() === "ferrari" || Valasztext2.toLowerCase() === "vörös") {
+        if (Valasztext2.toLowerCase() === "silverstone" || Valasztext2.toLowerCase() ===  "silverstone circuit" ) {
          pontszamtext++;
         }
-        if (Valasztext3.toLowerCase() === "ferrari" || Valasztext3.toLowerCase() === "vörös") {
+        if (Valasztext3.toLowerCase() === "1400" ) {
          pontszamtext++;
         }
-        if (Valasztext4.toLowerCase() === "ferrari" || Valasztext4.toLowerCase() === "vörös") {
+        if (Valasztext4.toLowerCase() === "mercedes") {
          pontszamtext++;
         }
         
@@ -105,6 +107,7 @@ function kvizErtekeltext(){
          szovegesErtekelestext = "Ez most olyan lett, mint az 1959-es szezon... Olvasd át újra a szöveget! 🔧";
      }
         
+
         
        // Ellenőrzés: mindenre érkezett-e válasz?
          if (!Valasztext1 || !Valasztext2 || !Valasztext3 || !Valasztext4) {
@@ -113,6 +116,70 @@ function kvizErtekeltext(){
          hibaDoboztext.style.color = "orange";
          return; 
      }
+        
+         
+        // Szöveges visszajelzés az eredményről
+        
+         document.getElementById("szoveges_visszajelzes").innerHTML = szovegesErtekelestext;
+        
+         // Eredmény kiiratása
+        
+         document.getElementById("eredmeny_helyetext").innerHTML = "Pontszámod:" + pontszamtext + "/4";
+}
+
+
+
+
+
+// Az auto.html oldalon található kvíz függvénye //
+function kvizErtekeltextb(){
+
+         var pontszamtext = 0;
+    
+        // Válaszok tartalmának kinyerése
+        
+ var Valasztext1b = document.getElementById("kerdestext1b").value;
+ var Valasztext2b = document.getElementById("kerdestext2b").value;
+ var Valasztext3b = document.getElementById("kerdestext3b").value;
+ var Valasztext4b = document.getElementById("kerdestext4b").value;
+        
+        
+        // Kis és Nagybetű elleni "védekezés"
+        if (Valasztext1b.toLowerCase() === "hans rendszer" ) {
+         pontszamtext++;
+        }
+        if (Valasztext2b.toLowerCase() === "2010" || Valasztext2b.toLowerCase() ===  "silverstone circuit" ) {
+         pontszamtext++;
+        }
+        if (Valasztext3b === "farina" || Valasztext3b === "nino farina" || Valasztext3b === "giuseppe farina") pontszam++;
+       
+        if (Valasztext4b.toLowerCase() === "költségplafont") {
+         pontszamtext++;
+        }
+
+
+        
+          // Ellenőrzés: mindenre érkezett-e válasz?
+         if (!Valasztext1b || !Valasztext2b || !Valasztext3b || !Valasztext4b) {
+        const hibaDoboztext = document.getElementById("eredmeny-doboztext");
+         hibaDoboztext.innerHTML = "Légy szíves, jelölj be egy választ minden kérdésnél!";
+         hibaDoboztext.style.color = "orange";
+         return; 
+     }
+        
+        //Végeredmény üzenet 
+        
+         if(pontszamtext === 4){
+         szovegesErtekelestext = "Hibáltan! Gratulálok, tökéletesen teljesítetted a tesztet."
+        } else if (pontszamtext >= 2) { 
+         szovegesErtekelestext = "Szépen teljesítettél a teszten, de azért volt benne 1-2 két hiba :)."
+        
+         } else{
+         szovegesErtekelestext = "Ez most olyan lett, mint az 1959-es szezon... Olvasd át újra a szöveget! 🔧";
+     }
+        
+        
+     
         
          
         // Szöveges visszajelzés az eredményről

@@ -20,37 +20,44 @@ body {
     padding: 3%; 
     box-shadow: 0 10px 20px rgba(0,0,0,0.5); 
 }
-
+/* 1. A fő csomagoló, ami a képernyő tetejére tapad */
 .kontener {
-    max-width: 900px;
-    width: 92%;
-    margin: 20px auto 0 auto;
-    padding: 10px;
-    background-color: rgb(31, 176, 149);       
-    border: 2px black solid;
-    border-radius: 20px;
+    width: 100%;
+    top: 0;
+    left: 0;
     position: fixed;
-
+    z-index: 1000;
+    background-color: rgb(31, 176, 149);
+    padding: 10px 0; /* Fent és lent 10px, oldalt 0 */
+    border-bottom: 2px solid black;
 }
 
-.nav ul {
-    width: 70%;
-    list-style: none;
-    display: flex;
-    gap: 20px; 
-    padding: 20px;
-    margin: 0;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
+/* 2. A menü sávja (a futószalag) */
 .nav {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; /* <--- EZ TESZI KÖZÉPRE A GOMBOKAT */
     position: relative;
     height: 65px;
+    width: 100%; /* Biztosíték: kötelezzük, hogy érjen faltól falig! */
+}
+
+/* 3. A logó (kiszögelve a bal szélre) */
+.logo {
+    width: 80px;
+    position: absolute;
+    left: 20px; /* 20 pixelre a bal szélétől */
+    /* Nincs itt margin-right! */
+}
+
+/* 4. A gombok listája */
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    /* Nincs itt position: absolute vagy width! */
 }
 
 .lista {
@@ -79,7 +86,6 @@ main {
 
 .szoveg {
     color: white;
-    border: #15151e 2px solid;
     display: flex; 
     flex-wrap: wrap; 
     gap: 20px; 
@@ -92,7 +98,7 @@ main {
 }
 .szoveg:hover { 
     border-color:white; 
-    border: 1px, solid;
+    border: 2px, solid;
     margin-top: 50px;
     margin-bottom:50px ;
 }
@@ -108,9 +114,6 @@ main {
 
 .csapatkep{
     width: 90%;
-    align-items: center;
-    border-radius: 20px;
-    border: #15151e 2px solid;
 }
 
 .F1car {
@@ -127,13 +130,9 @@ main {
     height: 50%;
 }
 
-/* A kvíz formázása       */
+/* A Rádió gombos kvíz formázása    */
 
-/*h2 {
-    text-align: center; /* Javítva az elírás és hiányzó pontosvessző */
-    /*font-family: 'Times New Roman', Times, serif;
-    color: red;
-}*/
+
 
 #kviz-szekcio {
     font-family: 'Times New Roman', Times, serif;
@@ -253,6 +252,44 @@ main {
     letter-spacing: 0.5px;
 }
 
+
+/* A beviteli mezős kvíz formázása */
+
+#kviz-kontener{
+    background-color: rgb(12, 73, 60);
+    padding: 25px;
+    margin: 40px auto;
+    border: 5px solid #000000ec;
+   border-radius: 15px;
+
+}
+
+.kerdextext1 {
+    padding: 10%;
+    width: 75%;
+}
+
+
+#kviz-kontener button {
+    font-size: large;
+    color: white;
+    background-color: red;
+    padding: 15px;
+    border-radius:  15px;
+}
+
+#kviz-kontener p {
+    margin-top: 25px; 
+    margin-bottom: 5px; 
+    font-weight: bold; 
+}
+
+#kviz-kontener input {
+    padding: 10px; 
+    width: 75%;
+    border-radius: 5px;
+    margin-bottom: 15px; 
+}
 
 
 /*Főoldal*/

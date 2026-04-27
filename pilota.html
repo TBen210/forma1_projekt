@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <title>Document</title>
+    <title>Forma 1 történelme</title>
 </head>
 <body>
     <header>
@@ -75,5 +75,40 @@
             
         </section>
     </main>
+
+
+
+
+ 
+<script src="script.js"></script>
+  <section id="kviz-kontener">
+    
+    
+    <form id="kviz-form">
+
+    <div id="kviztext">
+      
+        <p>1. Melyik legendás pilóta uralta az F1 legelső évtizedét (az 1950-es éveket) öt világbajnoki címével?</p>
+        <input id="kerdestext1" type="text">
+        
+        <p>2. Melyik pályán indult el hivatalosan a modern Formula-1 1950-ben?</p>
+        <input id="kerdestext2" type="text">
+        
+        <p>3. Az 1980-as évek brutális "turbókorszakában" körülbelül mekkora volt a motorok csúcsteljesítménye?</p>
+        <input id="kerdestext3" type="text"> 
+        
+        <p>4. Melyik csapat emelkedett fel egyeduralkodóként a 2014-ben kezdődő V6-os hibrid korszakban?</p>
+        <input id="kerdestext4" type="text">
+        <br>
+        <button type="button" onclick="kvizErtekeltext()">Kész vagyok!</button>
+        
+        <p id="szoveges_visszajelzes"></p>
+        <p id="eredmeny_helyetext"></p>
+    </div>
+</form>
+<div id="eredmeny-doboztext" style="margin-top: 20px; font-weight: bold;"></div>
+
+
+
 </body>
 </html>
