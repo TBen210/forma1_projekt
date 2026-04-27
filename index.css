@@ -6,6 +6,9 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     background-color: rgb(15, 14, 17); 
     font-family: Arial, sans-serif;
     padding: 2%; 
@@ -132,10 +135,10 @@ main {
 
 #kviz-szekcio {
     font-family: 'Times New Roman', Times, serif;
-    color: red;
+    color: rgb(255, 255, 255);
     width: 80%;
     margin: 20px auto;
-    background-color: #f4f4f4;
+    background-color: rgba( 31, 176, 149, 0.3); 
     padding: 20px;
     border-radius: 8px;
     border: 2px solid #e10600; /* F1 piros szín */
@@ -143,7 +146,7 @@ main {
 
 .kerdes-blokk {
     font-family: 'Times New Roman', Times, serif;
-    color: red;
+    color: rgb(255, 255, 255);
     margin-bottom: 15px;
     padding-bottom: 10px;
     border-bottom: 1px solid #ccc;
@@ -170,7 +173,7 @@ main {
     color: #f0f0f0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 50px 0 20px 0;
-    margin-top: 60px;
+    margin-top: auto;
     border-top: 5px solid #e10600;
 }
 
