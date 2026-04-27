@@ -312,6 +312,11 @@ main {
       padding: 3rem 1.5rem;
     }
  
+    a.linkfo{
+        text-decoration: none;
+        color: #b30000;
+    }
+
     .kartyak {
       max-width: 900px;
       margin: 0 auto;
